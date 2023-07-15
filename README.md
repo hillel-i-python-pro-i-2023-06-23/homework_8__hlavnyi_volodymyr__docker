@@ -1,7 +1,7 @@
-# Flask application
+# HW 8. Flask. Make Routes for mini-tasks. File, Generate Data, Request, CSV.
 
 ---
-![Main workflow](https://github.com/hillel-i-python-pro-i-2023-06-23/shared__flask__example_2023_06_23/actions/workflows/main-workflow.yml/badge.svg)
+![Main workflow](https://github.com/hillel-i-python-pro-i-2023-06-23/actions/workflows/main-workflow.yml/badge.svg)
 
 ## 🏠 Homework
 
