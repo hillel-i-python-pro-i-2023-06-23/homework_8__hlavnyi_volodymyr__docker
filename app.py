@@ -27,6 +27,7 @@ def start():
 # Task 1
 # Read file
 @app.route("/get-content")
+@app.route("/get-content/")
 @app.route("/get-content/<namefile>")
 def get_content(namefile: str = "sample3.txt"):
     link2file_output = get_path_if_file_exists(namefile)
@@ -34,13 +35,15 @@ def get_content(namefile: str = "sample3.txt"):
 
 
 @app.route("/generate-users")
-@app.route("/generate-users/<int:amountusers>")
-def generate_users(amountusers: int = 100):
-    users = generate_list_of_users(amount=amountusers)
+@app.route("/generate-users/")
+@app.route("/generate-users/<int:amount_of_users>")
+def generate_users(amount_of_users: int = 100):
+    users = generate_list_of_users(amount=amount_of_users)
     return generate_string_list_of_users(users=users, type_of_list="ol")
 
 
 @app.route("/space")
+@app.route("/space/")
 def space():
     url1 = "http://api.open-notify.org/astros.json"
     # [handle_logic]-[BEGIN]
@@ -52,6 +55,7 @@ def space():
 
 
 @app.route("/mean")
+@app.route("/mean/")
 def mean():
     url2 = "https://drive.google.com/uc?export=download&id=13nk_FYpcayUck2Ctrela5Tjt9JQbjznt"
     # get data
