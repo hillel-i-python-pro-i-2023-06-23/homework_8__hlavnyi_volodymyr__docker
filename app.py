@@ -20,6 +20,7 @@ app = Flask(__name__)
 # start/first route
 @app.route("/")
 @app.route("/start")
+@app.route("/start/")
 def start():
     return get_string_homework()
 
